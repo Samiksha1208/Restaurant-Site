@@ -5,17 +5,6 @@
 font-family: 'Fira Sans Condensed', sans-serif;
 
 }
-header{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 15px;
-
-}
 
 ul{
   display: flex;
@@ -24,27 +13,7 @@ ul{
 }
 li{
   list-style: none;
-  margin-left: 20px;
   text-decoration: none;
-  padding-left: 80px;
-}
-.home{
-  z-index: 2;
- text-decoration: none;
-  position: absolute;
-  color: black;
-  margin-left: 550px;
-  margin-top: 18px;
-}
-#nav{
-  text-decoration: none;
-  color: white;
-  padding: 6px 15px;
-  border-radius: 20px;
-}
-#nav:hover{
-  text-decoration: none;
-  color: red;
 }
 .containerb{
   height: auto;
@@ -131,13 +100,15 @@ td{
   color: brown;
 }
 .pop{
-    background-color: white;
-    position: absolute;
-    width: 500px;
-    height: 400px;
-    margin-top: -59vh;
-    margin-left: 90vh;
-    padding: 90px;
+  background-color: white;
+  position: relative;
+  width: 30%;
+  height: 25%;
+  margin-left: -10%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4.5%;
+  padding: 4.5%;
 
 }
 .icon{
@@ -151,33 +122,57 @@ td{
 }
 #book{
   background-color: white;
-  color: red;
+  color: rgb(110, 16, 16);
   padding: 10px 30px ;
 }
 #book:hover{
   background-color: rgb(77, 11, 11);
   color: white;
 }
+#start{
+  color: white;
+  background-color: rgb(99, 18, 18);
+  width: auto;
+  height: auto;
+  font-size: 36px;
+  padding: 3px;
+  text-decoration: none;
+}
+#start:hover{
+  cursor: pointer;
+}
 @media screen and (max-width: 992px) {
- .home{
-   margin-left: 0px;
+ .fit{
+   display: block;
  }
-#nav{
-  padding: 0px 0px;
-}
-header{
-  justify-content: flex-start;
-}
-li{
-  margin-left:20px;
-  padding-left: 70px;
-  float: left;
-}
-}
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-.home{
-  margin-left: 0px;
 }
 
+ @media screen and (max-width: 600px) {
+  .fit{
+    flex-flow:nowrap;
+  justify-content: space-around;
+
+  }
+
+} 
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+  color: rgb(64, 11, 124);
+}
+.caption{
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.TR {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.promo{
+  width: 55%;
+  height: 40%;
+  object-fit: cover;
 }
