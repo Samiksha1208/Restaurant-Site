@@ -1,0 +1,183 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+header{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style: none;
+  margin-left: 20px;
+  text-decoration: none;
+  padding-left: 80px;
+}
+.home{
+  z-index: 2;
+ text-decoration: none;
+  position: absolute;
+  color: black;
+  margin-left: 704px;
+  margin-top: 18px;
+}
+#nav{
+  text-decoration: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+#nav:hover{
+  text-decoration: none;
+  color: red;
+}
+.containerb{
+  height: auto;
+  background-color: white;
+  display: grid;
+  grid-template-areas: 
+  'bx bx'
+  'b1 b2';
+  grid-gap: 30px;
+  margin-left: 20px;
+}
+#bx{
+  grid-area: bx;
+}
+#b1{
+  grid-area: b1;
+}
+#b2{
+  grid-area: b2;
+}
+.container1{
+  height: 200px;
+background-image: url('/Images/background.png');
+background-repeat: no-repeat;
+  background-size: 100% 200px;
+}
+.container2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/Images/bread.jpg);
+  height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-blend-mode: hue;
+}
+.container3{
+  height: auto;
+  background-color: white;
+}
+.container4{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/Images/promo_slide_2.jpg' );
+background-repeat: no-repeat;
+width: 100%;
+height: 500px;
+background-size: cover;
+}
+.container5{
+  background-color: white;
+  height: 800px;
+}
+.container6{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/Images/promo_slide_3.jpg' );
+background-repeat: no-repeat;
+width: 100%;
+height: 700px;
+background-size: cover;
+}
+.container7{
+  background-color: white;
+  height: 400px;
+}
+.container8{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/Images/Footer background.png' );
+background-repeat: no-repeat;
+height: auto;
+background-size: cover;
+}
+.btn{
+  border: 1px solid black;
+}
+.btn:hover{
+  background-color: rgb(77, 11, 11);
+  color: white;
+}
+.card{
+  width: 550px;
+  border: none;
+}
+td{
+  margin-right: 3px;
+}
+.mainTitle{
+  font-family: 'Dancing Script', cursive;
+  font-size: 9vh;
+  color: brown;
+}
+.pop{
+    background-color: white;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    margin-top: -59vh;
+    margin-left: 90vh;
+    padding: 90px;
+
+}
+.icon{
+  font-size:36px;
+  color:white;
+  margin-left: 30px;
+  margin-bottom: 20vh;
+}
+.icon:hover{
+  cursor: pointer;
+}
+#book{
+  background-color: white;
+  color: red;
+  padding: 10px 30px ;
+}
+#book:hover{
+  background-color: rgb(77, 11, 11);
+  color: white;
+}
+@media screen and (max-width: 992px) {
+ .home{
+   margin-left: 0px;
+ }
+#nav{
+  padding: 0px 0px;
+}
+header{
+  justify-content: flex-start;
+}
+li{
+  margin-left:20px;
+  padding-left: 70px;
+  float: left;
+}
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+.home{
+  margin-left: 0px;
+}
+
+}
