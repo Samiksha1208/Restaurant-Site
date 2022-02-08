@@ -150,6 +150,10 @@ td{
 @media screen and (max-width: 992px) {
  .fit{
    display: block;
+
+ }
+ .TL{
+   display: none;
  }
 }
 
@@ -159,7 +163,9 @@ td{
   justify-content: space-around;
 
   }
-
+  .TL{
+    display: none;
+  }
 } 
 
 .imageContainer {
